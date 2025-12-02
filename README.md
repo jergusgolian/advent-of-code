@@ -7,5 +7,5 @@ Just my attempts in [AoC](http://adventofcode.com/). Started on 2025, because th
 > Everything is programmed in python. Answers are organized by year.
 
 # 2025
-[Day 1](//Advent of Code 2025/1) <br>
-[Day 2](//Advent of Code 2025/2)
+[Day 1](Advent$20of$20Code$202025/1) <br>
+[Day 2](Advent$20of$20Code$202025/2)
