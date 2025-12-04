@@ -1,0 +1,44 @@
+file = open("4/input.txt", "r")
+lines = file.readlines()
+diagram = []
+
+
+for i in range(len(lines)):
+    line = lines[i].strip()
+    diagram.append(line)
+
+for j in diagram:
+    print(j)
+
+final_sum = 0
+    
+for line_pos in range(len(diagram)):
+    line = diagram[line_pos]
+    for char_pos in range(len(line)):
+        char = line[char_pos]
+        
+        if char == "@":
+            
+            neighorhood_full = 0
+
+            for dy in [-1, 0, 1]:
+                for dx in [-1, 0, 1]:
+                    
+                    if dy == 0 and dx == 0:
+                        continue
+                        
+                    ny = line_pos + dy
+                    nx = char_pos + dx
+                    
+                    if 0 <= ny < len(diagram) and 0 <= nx < len(diagram[ny]):
+                        if diagram[ny][nx] == "@":
+                            neighorhood_full += 1
+
+            if neighorhood_full < 4:
+                accesable = True
+                final_sum += 1
+            else:
+                accesable = False
+
+print()
+print(final_sum)
