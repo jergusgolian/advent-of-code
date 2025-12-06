@@ -1,4 +1,4 @@
-file = open("/storage/emulated/0/PyDroid/6/input.txt", "r")
+file = open("6/input.txt", "r")
 lines = file.readlines()
 clean_lines = [ ]
 
@@ -59,3 +59,4 @@ for i in range(len(grouped_numbers)):
 
 print()
 print(f"The grand total is {final_sum}")
+
